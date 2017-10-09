@@ -1,0 +1,2 @@
+1. ingeven op leia(=localhost) :  scp -P 22345 copyThisFile.txt  root@193.191.177.207:../tmp
+2. ssh-keygen -t rsa -b 4096. kopieer inhoud van .ssh/id_rsa.pub van r0486@leia (localhost) naar .ssh/authorizd_keys van root@ben-desmet. login van leia naar ben-desmet met ssh -p 22345 root@193.191.177.207
