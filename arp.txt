@@ -1,0 +1,4 @@
+against arp-spoofing:
+in root:
+arp -s 193.191.177.254 ca:fe:c0:ff:ee:00
+(adds an static arp entry , for the gateway to local arptable)
