@@ -1,0 +1,5 @@
+crontab -e
+
+in crontab volgende lijnen toegevoegd:
+0 * * * *  apt-get update
+0 * * * *  apt-get -y upgrade
