@@ -1,0 +1,6 @@
+MET leia als "offline apparaat"
+op leia : 
+	crontab -e
+	#volgende lijn aan de file toevoegen:
+	0 0 * * *  scp -P 22345 -r root@193.191.177.207:../var/backups/$(ssh root@193.191.177.207 -p 22345 'ls -t ../var/backups | head -1') ./SB_server_backup
+	#leia haalt elke dag om 00:00 een copy van de laatste backup van de server af
